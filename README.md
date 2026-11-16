@@ -14,8 +14,9 @@ To discover which ATS a company uses it may request a company's own `/careers`, 
 ## How it behaves
 - Respects `robots.txt` and any crawl delay.
 - At most one request per second to Lever and a small, fixed concurrency elsewhere; most boards are fetched once a day.
-- Stores structured fields (hours, pay, contract type, location eligibility) and a short excerpt, plus a link back to
-  the employer's own application page. It never hosts applications for your roles.
+- Fetches public job postings for internal processing. Publishes only structured fields (hours, pay, contract type,
+  location eligibility) and a short summary in our own words, plus a link back to the employer's own application
+  page. It never hosts applications for your roles.
 
 ## Opt out or contact
 Open an issue in this repository with your company or board name. We stop fetching your board and remove your
